@@ -4,12 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
     tools:context=".MainActivity">
 
-<customview.example.com.customview.widget.CountView
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:layout_gravity="center_vertical"
-    android:layout_centerVertical="true"
-    android:layout_centerHorizontal="true" />
+    <customview.example.com.customview.widget.CountView
+        android:id="@+id/count_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical" />
+
+    <customview.example.com.customview.widget.TitleViewCombox
+        android:id="@+id/titleview_combox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count_view"
+        android:layout_marginTop="20dp" />
 </RelativeLayout>
